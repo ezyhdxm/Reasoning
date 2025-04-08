@@ -25,9 +25,6 @@ def get_hash(config: ConfigDict) -> str:
 def _init_log() -> dict:
     """
     Initialize log dictionary for evaluation metrics.
-    Args:
-        bsln_preds: baseline predictions
-        n_dims: number of dimensions
     """
     log = {"eval/step": [], "train/lr": [], "train/loss": [], "eval/loss": [], "eval/accuracy": []}
     return log
@@ -63,6 +60,8 @@ def train(model, sampler, config: ConfigDict, verbose=True) -> None:
     os.makedirs(exp_dir, exist_ok=True)
     with open(os.path.join(exp_dir, "config.json"), "w") as f:
         f.write(config.to_json())
+    
+    model.to(config.device)
 
     print(tabulate_model(model, SEQ_LEN, config.batch_size, config.device))
 
@@ -83,10 +82,15 @@ def train(model, sampler, config: ConfigDict, verbose=True) -> None:
     attn_maps = {}
     
     test_data, test_mask = sampler.generate(config.test_size)
+    test_data = test_data.to(config.device)
+    test_mask = test_mask.to(config.device)
+
     test_target = test_data[:, 1:]
     test_targets_flat = test_target.reshape(-1)
+    
     test_mask = test_mask[:, 1:]
     test_mask_flat = test_mask.reshape(-1)     
+    
     # Training loop
     
     epochs = min(config.training.total_steps, MAX_SIZE)
@@ -112,6 +116,9 @@ def train(model, sampler, config: ConfigDict, verbose=True) -> None:
             model.train()
             optimizer.zero_grad()
             
+            batch = batch.to(config.device)
+            batch_mask = batch_mask.to(config.device)
+
             preds, _ = model(batch)
             preds = preds[:, :-1]
             targets = batch[:, 1:]

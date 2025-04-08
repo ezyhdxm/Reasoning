@@ -1,0 +1,80 @@
+_allow_dotted_keys:
+    value: false
+_convert_dict:
+    value: true
+_fields:
+    value:
+        batch_size: 256
+        device: cuda
+        model: |
+            activation: &id001 !!python/tuple
+            - false
+            - true
+            bias: false
+            dropout: null
+            emb_dim: 64
+            ff_dim: 128
+            flash: true
+            layer_norm: false
+            mask: true
+            mlp: *id001
+            mlp_bias: true
+            num_heads: !!python/tuple
+            - 1
+            - 1
+            num_layers: 2
+            pos_enc: rotary
+            pos_max_len: 256
+        task: |
+            max_variables: 12
+        test_size: 4096
+        training: |
+            eval_iter: 100
+            freeze_out: false
+            freeze_value: false
+            get_attn: 1000
+            get_checkpoints: 500
+            identity_query: false
+            label_smoothing: 0.1
+            lr: 0.001
+            optimizer: adam
+            schedule: triangle
+            total_steps: 10000
+            warmup_steps: 5000
+            weight_decay: 0.01
+        vocab_size: 16
+        wandb: |
+            project: Reasoning
+        work_dir: results
+_locked:
+    value: false
+_sort_keys:
+    value: true
+_type_safe:
+    value: true
+_wandb:
+    value:
+        cli_version: 0.18.7
+        m: []
+        python_version: 3.12.3
+        t:
+            "1":
+                - 1
+                - 55
+            "2":
+                - 1
+                - 55
+            "3":
+                - 2
+                - 13
+                - 16
+                - 23
+                - 55
+            "4": 3.12.3
+            "5": 0.18.7
+            "8":
+                - 1
+                - 3
+                - 5
+            "12": 0.18.7
+            "13": windows-amd64

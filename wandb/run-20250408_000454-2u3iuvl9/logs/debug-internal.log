@@ -1,0 +1,18 @@
+{"time":"2025-04-08T00:04:57.2073305-05:00","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2025-04-08T00:04:57.2073305-05:00","level":"INFO","msg":"created symlink","path":"C:\\Users\\Hao\\Downloads\\LLM\\Reasoning\\wandb\\run-20250408_000454-2u3iuvl9\\logs\\debug-core.log"}
+{"time":"2025-04-08T00:04:57.3205461-05:00","level":"INFO","msg":"created new stream","id":"2u3iuvl9"}
+{"time":"2025-04-08T00:04:57.3205461-05:00","level":"INFO","msg":"stream: started","id":"2u3iuvl9"}
+{"time":"2025-04-08T00:04:57.3205461-05:00","level":"INFO","msg":"writer: Do: started","stream_id":"2u3iuvl9"}
+{"time":"2025-04-08T00:04:57.3205461-05:00","level":"INFO","msg":"sender: started","stream_id":"2u3iuvl9"}
+{"time":"2025-04-08T00:04:57.3205461-05:00","level":"INFO","msg":"handler: started","stream_id":"2u3iuvl9"}
+{"time":"2025-04-08T00:04:57.5998383-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-08T00:05:07.6009042-05:00","level":"ERROR","msg":"monitor: disk: error sampling metrics: Incorrect function."}
+{"time":"2025-04-08T00:05:09.747355-05:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-08T00:05:09.7478819-05:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-08T00:05:10.7490096-05:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"saving job artifact","runtime_seconds":0.8966194}],"total_operations":1}}
+{"time":"2025-04-08T00:05:11.0164733-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-08T00:05:12.2524931-05:00","level":"INFO","msg":"stream: closing","id":"2u3iuvl9"}
+{"time":"2025-04-08T00:05:12.2524931-05:00","level":"INFO","msg":"handler: closed","stream_id":"2u3iuvl9"}
+{"time":"2025-04-08T00:05:12.2524931-05:00","level":"INFO","msg":"writer: Close: closed","stream_id":"2u3iuvl9"}
+{"time":"2025-04-08T00:05:12.2524931-05:00","level":"INFO","msg":"sender: closed","stream_id":"2u3iuvl9"}
+{"time":"2025-04-08T00:05:12.2524931-05:00","level":"INFO","msg":"stream: closed","id":"2u3iuvl9"}

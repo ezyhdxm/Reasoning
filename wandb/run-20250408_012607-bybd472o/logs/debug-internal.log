@@ -1,0 +1,46 @@
+{"time":"2025-04-08T01:26:09.7353837-05:00","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2025-04-08T01:26:09.7359458-05:00","level":"INFO","msg":"created symlink","path":"C:\\Users\\Hao\\Downloads\\LLM\\Reasoning\\wandb\\run-20250408_012607-bybd472o\\logs\\debug-core.log"}
+{"time":"2025-04-08T01:26:09.8495934-05:00","level":"INFO","msg":"created new stream","id":"bybd472o"}
+{"time":"2025-04-08T01:26:09.8495934-05:00","level":"INFO","msg":"stream: started","id":"bybd472o"}
+{"time":"2025-04-08T01:26:09.8495934-05:00","level":"INFO","msg":"writer: Do: started","stream_id":"bybd472o"}
+{"time":"2025-04-08T01:26:09.8495934-05:00","level":"INFO","msg":"sender: started","stream_id":"bybd472o"}
+{"time":"2025-04-08T01:26:09.8495934-05:00","level":"INFO","msg":"handler: started","stream_id":"bybd472o"}
+{"time":"2025-04-08T01:26:10.0606005-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-08T01:26:20.0616921-05:00","level":"ERROR","msg":"monitor: disk: error sampling metrics: Incorrect function."}
+{"time":"2025-04-08T01:28:46.1149722-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-08T01:28:55.3938766-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-08T01:28:55.4004072-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-08T01:28:57.7630966-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-08T01:28:57.8651556-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-08T01:29:10.3129848-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-08T01:29:10.3175019-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-08T01:29:10.9938587-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-08T01:29:11.0014125-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-08T01:29:15.4491492-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-08T01:29:15.4543957-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-08T01:30:03.8994535-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-08T01:30:03.9119012-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-08T01:30:13.1005559-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-08T01:30:13.106646-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-08T01:30:28.2969494-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-08T01:30:28.3011528-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-08T01:30:49.0490397-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-08T01:30:49.0563323-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-08T01:30:50.7502144-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-08T01:30:50.7549373-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-08T01:30:52.3928393-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-08T01:30:52.3961647-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-08T01:32:02.4338935-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-08T01:32:02.4944401-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-08T01:32:09.0470245-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-08T01:32:09.0490173-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-08T01:32:09.9301913-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-08T01:32:10.0697124-05:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-08T01:32:10.0808214-05:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-08T01:32:10.5607986-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-08T01:32:10.8753533-05:00","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2025-04-08T01:32:11.8898343-05:00","level":"INFO","msg":"stream: closing","id":"bybd472o"}
+{"time":"2025-04-08T01:32:11.8898343-05:00","level":"INFO","msg":"handler: closed","stream_id":"bybd472o"}
+{"time":"2025-04-08T01:32:11.8898343-05:00","level":"INFO","msg":"writer: Close: closed","stream_id":"bybd472o"}
+{"time":"2025-04-08T01:32:11.8898343-05:00","level":"INFO","msg":"sender: closed","stream_id":"bybd472o"}
+{"time":"2025-04-08T01:32:11.8898343-05:00","level":"INFO","msg":"stream: closed","id":"bybd472o"}
