@@ -1,0 +1,22 @@
+{"time":"2025-04-08T11:42:13.1064576-05:00","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2025-04-08T11:42:13.1070199-05:00","level":"INFO","msg":"created symlink","path":"C:\\Users\\Hao\\Downloads\\LLM\\Reasoning\\wandb\\run-20250408_114211-510ek0v2\\logs\\debug-core.log"}
+{"time":"2025-04-08T11:42:13.2185518-05:00","level":"INFO","msg":"created new stream","id":"510ek0v2"}
+{"time":"2025-04-08T11:42:13.2185518-05:00","level":"INFO","msg":"stream: started","id":"510ek0v2"}
+{"time":"2025-04-08T11:42:13.2185518-05:00","level":"INFO","msg":"writer: Do: started","stream_id":"510ek0v2"}
+{"time":"2025-04-08T11:42:13.2185518-05:00","level":"INFO","msg":"handler: started","stream_id":"510ek0v2"}
+{"time":"2025-04-08T11:42:13.2185518-05:00","level":"INFO","msg":"sender: started","stream_id":"510ek0v2"}
+{"time":"2025-04-08T11:42:13.5143235-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-08T11:42:23.5145017-05:00","level":"ERROR","msg":"monitor: disk: error sampling metrics: Incorrect function."}
+{"time":"2025-04-08T11:42:29.0891786-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-08T11:42:52.9811744-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-08T11:42:52.9826601-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-08T11:42:54.1871956-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-08T11:42:54.4103358-05:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-08T11:42:54.4108397-05:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-08T11:42:55.4107783-05:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"saving job artifact","runtime_seconds":0.761305}],"total_operations":1}}
+{"time":"2025-04-08T11:42:56.0163429-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-08T11:42:57.3136473-05:00","level":"INFO","msg":"stream: closing","id":"510ek0v2"}
+{"time":"2025-04-08T11:42:57.3136473-05:00","level":"INFO","msg":"handler: closed","stream_id":"510ek0v2"}
+{"time":"2025-04-08T11:42:57.3136473-05:00","level":"INFO","msg":"writer: Close: closed","stream_id":"510ek0v2"}
+{"time":"2025-04-08T11:42:57.3136473-05:00","level":"INFO","msg":"sender: closed","stream_id":"510ek0v2"}
+{"time":"2025-04-08T11:42:57.3136473-05:00","level":"INFO","msg":"stream: closed","id":"510ek0v2"}

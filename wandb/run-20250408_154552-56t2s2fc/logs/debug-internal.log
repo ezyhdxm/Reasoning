@@ -1,0 +1,9 @@
+{"time":"2025-04-08T15:45:55.0155649-05:00","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2025-04-08T15:45:55.0160911-05:00","level":"INFO","msg":"created symlink","path":"C:\\Users\\Hao\\Downloads\\LLM\\Reasoning\\wandb\\run-20250408_154552-56t2s2fc\\logs\\debug-core.log"}
+{"time":"2025-04-08T15:45:55.1246965-05:00","level":"INFO","msg":"created new stream","id":"56t2s2fc"}
+{"time":"2025-04-08T15:45:55.1246965-05:00","level":"INFO","msg":"stream: started","id":"56t2s2fc"}
+{"time":"2025-04-08T15:45:55.1246965-05:00","level":"INFO","msg":"writer: Do: started","stream_id":"56t2s2fc"}
+{"time":"2025-04-08T15:45:55.1252207-05:00","level":"INFO","msg":"handler: started","stream_id":"56t2s2fc"}
+{"time":"2025-04-08T15:45:55.1252207-05:00","level":"INFO","msg":"sender: started","stream_id":"56t2s2fc"}
+{"time":"2025-04-08T15:45:55.5560928-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-08T15:46:05.556225-05:00","level":"ERROR","msg":"monitor: disk: error sampling metrics: Incorrect function."}

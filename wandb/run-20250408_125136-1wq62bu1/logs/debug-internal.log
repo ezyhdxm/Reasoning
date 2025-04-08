@@ -1,0 +1,22 @@
+{"time":"2025-04-08T12:51:39.8305261-05:00","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2025-04-08T12:51:39.8305261-05:00","level":"INFO","msg":"created symlink","path":"C:\\Users\\Hao\\Downloads\\LLM\\Reasoning\\wandb\\run-20250408_125136-1wq62bu1\\logs\\debug-core.log"}
+{"time":"2025-04-08T12:51:39.9526695-05:00","level":"INFO","msg":"created new stream","id":"1wq62bu1"}
+{"time":"2025-04-08T12:51:39.9526695-05:00","level":"INFO","msg":"stream: started","id":"1wq62bu1"}
+{"time":"2025-04-08T12:51:39.9526695-05:00","level":"INFO","msg":"handler: started","stream_id":"1wq62bu1"}
+{"time":"2025-04-08T12:51:39.9526695-05:00","level":"INFO","msg":"sender: started","stream_id":"1wq62bu1"}
+{"time":"2025-04-08T12:51:39.9526695-05:00","level":"INFO","msg":"writer: Do: started","stream_id":"1wq62bu1"}
+{"time":"2025-04-08T12:51:40.2615988-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-08T12:51:50.263106-05:00","level":"ERROR","msg":"monitor: disk: error sampling metrics: Incorrect function."}
+{"time":"2025-04-08T13:14:14.8121818-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-08T13:15:40.3914412-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-08T13:15:40.3959578-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-08T13:15:42.2820087-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-08T13:15:42.2884233-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-08T13:16:15.2975919-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-08T13:16:15.315367-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-08T13:16:23.507257-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-08T13:16:24.4435007-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-08T13:16:40.9826386-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-08T13:16:41.0012348-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-08T13:17:08.1993305-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-08T13:17:08.2146103-05:00","level":"INFO","msg":"Pausing system monitor"}

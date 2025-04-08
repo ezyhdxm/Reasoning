@@ -1,0 +1,9 @@
+{"time":"2025-04-08T11:42:57.3167627-05:00","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2025-04-08T11:42:57.3167627-05:00","level":"INFO","msg":"created symlink","path":"C:\\Users\\Hao\\Downloads\\LLM\\Reasoning\\wandb\\run-20250408_114254-k21qiq1b\\logs\\debug-core.log"}
+{"time":"2025-04-08T11:42:57.4271053-05:00","level":"INFO","msg":"created new stream","id":"k21qiq1b"}
+{"time":"2025-04-08T11:42:57.4271053-05:00","level":"INFO","msg":"stream: started","id":"k21qiq1b"}
+{"time":"2025-04-08T11:42:57.4271053-05:00","level":"INFO","msg":"handler: started","stream_id":"k21qiq1b"}
+{"time":"2025-04-08T11:42:57.4271053-05:00","level":"INFO","msg":"writer: Do: started","stream_id":"k21qiq1b"}
+{"time":"2025-04-08T11:42:57.4271053-05:00","level":"INFO","msg":"sender: started","stream_id":"k21qiq1b"}
+{"time":"2025-04-08T11:42:57.7011341-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-08T11:43:07.7013053-05:00","level":"ERROR","msg":"monitor: disk: error sampling metrics: Incorrect function."}

@@ -1,0 +1,1 @@
+{"eval/loss":NaN,"_wandb":{"runtime":283},"_timestamp":1.7441437315995011e+09,"train/accuracy":0.03775133192539215,"eval/accuracy":0.03405436500906944,"_step":1375,"train/op-accuracy":0.1171875,"_runtime":283.3848389,"eval/op-accuracy":0.105712890625,"train/lr":3.2500000000000004e-05,"train/loss":NaN}

@@ -1,0 +1,97 @@
+2025-04-08 16:53:31,878 INFO    MainThread:28576 [wandb_setup.py:_flush():79] Current SDK version is 0.18.7
+2025-04-08 16:53:31,878 INFO    MainThread:28576 [wandb_setup.py:_flush():79] Configure stats pid to 28576
+2025-04-08 16:53:31,878 INFO    MainThread:28576 [wandb_setup.py:_flush():79] Loading settings from C:\Users\Hao\.config\wandb\settings
+2025-04-08 16:53:31,878 INFO    MainThread:28576 [wandb_setup.py:_flush():79] Loading settings from C:\Users\Hao\Downloads\LLM\Reasoning\wandb\settings
+2025-04-08 16:53:31,878 INFO    MainThread:28576 [wandb_setup.py:_flush():79] Loading settings from environment variables: {}
+2025-04-08 16:53:31,878 INFO    MainThread:28576 [wandb_setup.py:_flush():79] Applying setup settings: {'mode': None, '_disable_service': None}
+2025-04-08 16:53:31,879 INFO    MainThread:28576 [wandb_setup.py:_flush():79] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2025-04-08 16:53:31,879 INFO    MainThread:28576 [wandb_setup.py:_flush():79] Applying login settings: {}
+2025-04-08 16:53:31,879 INFO    MainThread:28576 [wandb_init.py:_log_setup():533] Logging user logs to C:\Users\Hao\Downloads\LLM\Reasoning\wandb\run-20250408_165331-h5uzplla\logs\debug.log
+2025-04-08 16:53:31,879 INFO    MainThread:28576 [wandb_init.py:_log_setup():534] Logging internal logs to C:\Users\Hao\Downloads\LLM\Reasoning\wandb\run-20250408_165331-h5uzplla\logs\debug-internal.log
+2025-04-08 16:53:31,879 INFO    MainThread:28576 [wandb_init.py:init():619] calling init triggers
+2025-04-08 16:53:31,880 INFO    MainThread:28576 [wandb_init.py:init():626] wandb.init called with sweep_config: {}
+config: {'_fields': {'vocab_size': 16, 'device': 'cuda', 'work_dir': 'results', 'batch_size': 128, 'test_size': 4096, 'task': max_seq_len: 83
+max_variables: 12
+, 'model': activation: &id001 !!python/tuple
+- true
+- true
+- true
+bias: false
+dropout: 0.1
+emb_dim: 64
+ff_dim: 128
+flash: true
+layer_norm: true
+mlp: *id001
+mlp_bias: true
+num_heads: !!python/tuple
+- 1
+- 1
+- 1
+num_layers: 3
+pos_enc: rotary
+pos_max_len: 83
+, 'training': eval_iter: 150
+freeze_out: false
+freeze_value: false
+get_attn: 1000
+get_checkpoints: 500
+identity_query: false
+label_smoothing: 0
+lr: 0.0005
+optimizer: adamw
+pad_ignore: false
+schedule: triangle
+total_steps: 60000
+warmup_steps: 20000
+weight_decay: 0.01
+, 'wandb': project: Reasoning
+}, '_locked': False, '_type_safe': True, '_convert_dict': True, '_allow_dotted_keys': False, '_sort_keys': True}
+2025-04-08 16:53:31,880 INFO    MainThread:28576 [wandb_init.py:init():644] re-initializing run, found existing run on stack: bax7yq3a
+2025-04-08 16:53:31,881 INFO    MainThread:28576 [wandb_run.py:_finish():2155] finishing run hyan84-university-of-wisconsin-madison/Reasoning/bax7yq3a
+2025-04-08 16:53:31,882 INFO    MainThread:28576 [jupyter.py:save_history():459] not saving jupyter history
+2025-04-08 16:53:31,882 INFO    MainThread:28576 [jupyter.py:save_ipynb():387] not saving jupyter notebook
+2025-04-08 16:53:31,882 INFO    MainThread:28576 [wandb_init.py:_jupyter_teardown():461] cleaning up jupyter logic
+2025-04-08 16:53:31,882 INFO    MainThread:28576 [wandb_run.py:_atexit_cleanup():2420] got exitcode: 0
+2025-04-08 16:53:31,882 INFO    MainThread:28576 [wandb_run.py:_restore():2402] restore
+2025-04-08 16:53:31,883 INFO    MainThread:28576 [wandb_run.py:_restore():2408] restore done
+2025-04-08 16:54:14,189 WARNING MainThread:28576 [wandb_init.py:init():1260] interrupted
+Traceback (most recent call last):
+  File "C:\Users\Hao\anaconda3\envs\LLM\Lib\site-packages\wandb\sdk\wandb_init.py", line 1256, in init
+    return wi.init()
+           ^^^^^^^^^
+  File "C:\Users\Hao\anaconda3\envs\LLM\Lib\site-packages\wandb\sdk\wandb_init.py", line 654, in init
+    latest_run.finish()
+  File "C:\Users\Hao\anaconda3\envs\LLM\Lib\site-packages\wandb\sdk\wandb_run.py", line 451, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hao\anaconda3\envs\LLM\Lib\site-packages\wandb\sdk\wandb_run.py", line 393, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hao\anaconda3\envs\LLM\Lib\site-packages\wandb\sdk\wandb_run.py", line 2149, in finish
+    return self._finish(exit_code)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hao\anaconda3\envs\LLM\Lib\site-packages\wandb\sdk\wandb_run.py", line 2179, in _finish
+    self._atexit_cleanup(exit_code=exit_code)
+  File "C:\Users\Hao\anaconda3\envs\LLM\Lib\site-packages\wandb\sdk\wandb_run.py", line 2432, in _atexit_cleanup
+    self._on_finish()
+  File "C:\Users\Hao\anaconda3\envs\LLM\Lib\site-packages\wandb\sdk\wandb_run.py", line 2681, in _on_finish
+    _ = exit_handle.wait(
+        ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hao\anaconda3\envs\LLM\Lib\site-packages\wandb\sdk\lib\mailbox.py", line 279, in wait
+    found, abandoned = self._slot._get_and_clear(timeout=wait_timeout)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hao\anaconda3\envs\LLM\Lib\site-packages\wandb\sdk\lib\mailbox.py", line 126, in _get_and_clear
+    if self._wait(timeout=timeout):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hao\anaconda3\envs\LLM\Lib\site-packages\wandb\sdk\lib\mailbox.py", line 122, in _wait
+    return self._event.wait(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hao\anaconda3\envs\LLM\Lib\threading.py", line 655, in wait
+    signaled = self._cond.wait(timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hao\anaconda3\envs\LLM\Lib\threading.py", line 359, in wait
+    gotit = waiter.acquire(True, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+2025-04-08 16:54:25,136 WARNING MsgRouterThr:28576 [router.py:message_loop():75] message_loop has been closed

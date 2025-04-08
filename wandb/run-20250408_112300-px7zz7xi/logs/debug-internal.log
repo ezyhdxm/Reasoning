@@ -1,0 +1,18 @@
+{"time":"2025-04-08T11:23:03.9677169-05:00","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2025-04-08T11:23:03.9677169-05:00","level":"INFO","msg":"created symlink","path":"C:\\Users\\Hao\\Downloads\\LLM\\Reasoning\\wandb\\run-20250408_112300-px7zz7xi\\logs\\debug-core.log"}
+{"time":"2025-04-08T11:23:04.0760587-05:00","level":"INFO","msg":"created new stream","id":"px7zz7xi"}
+{"time":"2025-04-08T11:23:04.0760587-05:00","level":"INFO","msg":"stream: started","id":"px7zz7xi"}
+{"time":"2025-04-08T11:23:04.0760587-05:00","level":"INFO","msg":"sender: started","stream_id":"px7zz7xi"}
+{"time":"2025-04-08T11:23:04.0760587-05:00","level":"INFO","msg":"writer: Do: started","stream_id":"px7zz7xi"}
+{"time":"2025-04-08T11:23:04.0760587-05:00","level":"INFO","msg":"handler: started","stream_id":"px7zz7xi"}
+{"time":"2025-04-08T11:23:04.3256992-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-08T11:23:14.3260676-05:00","level":"ERROR","msg":"monitor: disk: error sampling metrics: Incorrect function."}
+{"time":"2025-04-08T11:42:11.2169706-05:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-08T11:42:11.2175277-05:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-08T11:42:11.7708265-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-08T11:42:12.0757749-05:00","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2025-04-08T11:42:13.1021375-05:00","level":"INFO","msg":"stream: closing","id":"px7zz7xi"}
+{"time":"2025-04-08T11:42:13.1021375-05:00","level":"INFO","msg":"handler: closed","stream_id":"px7zz7xi"}
+{"time":"2025-04-08T11:42:13.1021375-05:00","level":"INFO","msg":"writer: Close: closed","stream_id":"px7zz7xi"}
+{"time":"2025-04-08T11:42:13.1021375-05:00","level":"INFO","msg":"sender: closed","stream_id":"px7zz7xi"}
+{"time":"2025-04-08T11:42:13.1021375-05:00","level":"INFO","msg":"stream: closed","id":"px7zz7xi"}

@@ -1,0 +1,28 @@
+{"time":"2025-04-08T17:26:47.2278859-05:00","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2025-04-08T17:26:47.2278859-05:00","level":"INFO","msg":"created symlink","path":"C:\\Users\\Hao\\Downloads\\LLM\\Reasoning\\wandb\\run-20250408_172645-6amazcqx\\logs\\debug-core.log"}
+{"time":"2025-04-08T17:26:47.3402248-05:00","level":"INFO","msg":"created new stream","id":"6amazcqx"}
+{"time":"2025-04-08T17:26:47.3402248-05:00","level":"INFO","msg":"stream: started","id":"6amazcqx"}
+{"time":"2025-04-08T17:26:47.3402248-05:00","level":"INFO","msg":"writer: Do: started","stream_id":"6amazcqx"}
+{"time":"2025-04-08T17:26:47.3402248-05:00","level":"INFO","msg":"sender: started","stream_id":"6amazcqx"}
+{"time":"2025-04-08T17:26:47.3402248-05:00","level":"INFO","msg":"handler: started","stream_id":"6amazcqx"}
+{"time":"2025-04-08T17:26:47.5906579-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-08T17:26:57.5914878-05:00","level":"ERROR","msg":"monitor: disk: error sampling metrics: Incorrect function."}
+{"time":"2025-04-08T17:37:20.1717932-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-08T17:39:49.0900131-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-08T17:39:49.0939958-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-08T17:39:50.2547601-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-08T17:39:50.2631449-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-08T17:39:51.1887573-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-08T17:39:51.1920926-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-08T17:40:13.2628798-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-08T17:40:13.2786688-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-08T17:40:20.1191355-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-08T17:40:20.3041055-05:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-08T17:40:20.3041055-05:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-08T17:40:20.9232019-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-08T17:40:21.1136929-05:00","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2025-04-08T17:40:22.1359405-05:00","level":"INFO","msg":"stream: closing","id":"6amazcqx"}
+{"time":"2025-04-08T17:40:22.1359405-05:00","level":"INFO","msg":"handler: closed","stream_id":"6amazcqx"}
+{"time":"2025-04-08T17:40:22.1359405-05:00","level":"INFO","msg":"writer: Close: closed","stream_id":"6amazcqx"}
+{"time":"2025-04-08T17:40:22.1359405-05:00","level":"INFO","msg":"sender: closed","stream_id":"6amazcqx"}
+{"time":"2025-04-08T17:40:22.1367128-05:00","level":"INFO","msg":"stream: closed","id":"6amazcqx"}

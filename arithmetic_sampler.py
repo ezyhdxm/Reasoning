@@ -78,6 +78,7 @@ def safe_eval(expr):
 
 def transform_strings(arr):
     result = []
+    indices = []
     for a in arr:
         s = a[0]
         idx = s.find(")")
@@ -86,18 +87,20 @@ def transform_strings(arr):
             r = safe_eval(expr)
             new_s = r + s[3:]
             result.append(new_s)
-            continue
-
-        expr = s[idx - 3:idx]
-        r = safe_eval(expr)
-
-        if idx >= 4 and s[idx - 4] == "(":
-            new_s = s[:idx - 4] + r + s[idx + 1:]
+            indices.append(0)
         else:
-            new_s = s[:idx - 3] + r + s[idx:]
+            expr = s[idx - 3:idx]
+            r = safe_eval(expr)
 
-        result.append(new_s)
-    return np.array(result)
+            if idx >= 4 and s[idx - 4] == "(":
+                new_s = s[:idx - 4] + r + s[idx + 1:]
+                indices.append(idx - 4)
+            else:
+                new_s = s[:idx - 3] + r + s[idx:]
+                indices.append(idx - 3)
+            result.append(new_s)
+
+    return np.array(result), np.array(indices)
 
 def left_pad(arr, Tmax, pad_value=" "):
     B, T = arr.shape
@@ -123,14 +126,14 @@ def sample_arith_exp(num_samples, num_variables):
         variables = concat_popped_to_previous(variables, orders[:, t], ops[:, t])
     variables = concat_op_var(variables, ops[:,-1])
 
-    one_step_result = transform_strings(variables.copy())
+    one_step_result, indices = transform_strings(variables.copy())
     
-    return variables, one_step_result
+    return variables, one_step_result, indices
 
 
 def sample_arith_exp_tok(num_samples, num_variables, max_length):
     
-    variables, one_step_result = sample_arith_exp(num_samples, num_variables)
+    variables, one_step_result, indices = sample_arith_exp(num_samples, num_variables)
     # Vectorized mapping function
     map_func = np.vectorize(lambda c: char_to_id[c])  # default: numeric digit
     
@@ -139,22 +142,23 @@ def sample_arith_exp_tok(num_samples, num_variables, max_length):
     variables_mapped = map_func(variables)
     one_step_result_mapped = map_func(one_step_result)
     
-    variables = left_pad(variables, max_length-len(one_step_result[0]))
+    # variables = left_pad(variables, max_length-len(one_step_result[0]))
     variables_mapped = left_pad(variables_mapped, max_length-len(one_step_result[0]), pad_value=15)
-    return variables_mapped, one_step_result_mapped
+    return variables_mapped, one_step_result_mapped, indices
 
 
 class ArithmeticSampler:
     def __init__(self, max_variables):
         self.max_variables = max_variables
+        self.max_length = 8*max_variables - 13
+        self.causal_mask = torch.tril(torch.ones((self.max_length, self.max_length))).bool() # (T, T)
 
-    def generate(self, num_samples):
+    def generate(self, num_samples, get_attn_mask=False):
         probs = np.ones(self.max_variables-1)/(self.max_variables-1)
         draws = np.random.multinomial(n=num_samples, pvals=probs).astype(int)
         
-        MAX_LENGTH = 8*self.max_variables - 14
-        batch = torch.zeros((num_samples, MAX_LENGTH+1)).long()
-        mask = torch.zeros((num_samples, MAX_LENGTH+1)).bool()
+        batch = torch.zeros((num_samples, self.max_length)).long()
+        mask = torch.zeros((num_samples, self.max_length)).int() # (B, T+1)
         
         curr_idx = 0
         indices = torch.randperm(num_samples).long()
@@ -162,20 +166,28 @@ class ArithmeticSampler:
         for i in range(self.max_variables-1):
             if draws[i] == 0: continue
             
-            variables_mapped, one_step_result_mapped = sample_arith_exp_tok(draws[i], i+2, MAX_LENGTH)
+            variables_mapped, one_step_result_mapped, ops_indices = sample_arith_exp_tok(draws[i], i+2, self.max_length-1)
             suffix = np.full((draws[i], 1), 14, dtype=variables_mapped.dtype)
 
-            range_vecs = np.arange(1, MAX_LENGTH+2)
+            range_vecs = np.arange(1, self.max_length+1)
             # Concatenate along axis 1 (columns)
             variables_mapped = np.concatenate([variables_mapped, suffix], axis=1)
+            ops_indices += variables_mapped.shape[1]
             concatenated = np.concatenate((variables_mapped, one_step_result_mapped), axis=1)
             
             batch[indices[curr_idx:curr_idx+draws[i]], :] = torch.from_numpy(concatenated).long()
 
-            mask[indices[curr_idx:curr_idx+draws[i]], :] = torch.from_numpy(range_vecs > len(variables_mapped[0])).bool()
+            mask[indices[curr_idx:curr_idx+draws[i]], :] = torch.from_numpy(range_vecs > len(variables_mapped[0])).int()
+            mask[indices[curr_idx:curr_idx+draws[i]], ops_indices] = 2
             curr_idx += draws[i]
         
-        return batch, mask
+        if get_attn_mask:
+            padding_mask = (batch!=char_to_id[" "]) # (B, T)
+            attn_mask = self.causal_mask[None, None, :, :] & padding_mask[:, None, None, :] # (B, 1, T, T)
+
+            return (batch, mask, attn_mask)
+
+        return (batch, mask)
     
     def decode(self, batch):
         batch = batch.cpu().numpy()

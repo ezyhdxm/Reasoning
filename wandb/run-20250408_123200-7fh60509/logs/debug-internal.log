@@ -1,0 +1,18 @@
+{"time":"2025-04-08T12:32:02.3653569-05:00","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2025-04-08T12:32:02.3658977-05:00","level":"INFO","msg":"created symlink","path":"C:\\Users\\Hao\\Downloads\\LLM\\Reasoning\\wandb\\run-20250408_123200-7fh60509\\logs\\debug-core.log"}
+{"time":"2025-04-08T12:32:02.4753322-05:00","level":"INFO","msg":"created new stream","id":"7fh60509"}
+{"time":"2025-04-08T12:32:02.4753322-05:00","level":"INFO","msg":"stream: started","id":"7fh60509"}
+{"time":"2025-04-08T12:32:02.4753322-05:00","level":"INFO","msg":"writer: Do: started","stream_id":"7fh60509"}
+{"time":"2025-04-08T12:32:02.4753322-05:00","level":"INFO","msg":"handler: started","stream_id":"7fh60509"}
+{"time":"2025-04-08T12:32:02.4753322-05:00","level":"INFO","msg":"sender: started","stream_id":"7fh60509"}
+{"time":"2025-04-08T12:32:02.7994992-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-08T12:32:12.8015872-05:00","level":"ERROR","msg":"monitor: disk: error sampling metrics: Incorrect function."}
+{"time":"2025-04-08T12:51:36.8094369-05:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-08T12:51:36.8098768-05:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-08T12:51:37.8120019-05:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"saving job artifact","runtime_seconds":0.79388}],"total_operations":1}}
+{"time":"2025-04-08T12:51:38.5216912-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-08T12:51:39.8207738-05:00","level":"INFO","msg":"stream: closing","id":"7fh60509"}
+{"time":"2025-04-08T12:51:39.8207738-05:00","level":"INFO","msg":"handler: closed","stream_id":"7fh60509"}
+{"time":"2025-04-08T12:51:39.8207738-05:00","level":"INFO","msg":"writer: Close: closed","stream_id":"7fh60509"}
+{"time":"2025-04-08T12:51:39.8207738-05:00","level":"INFO","msg":"sender: closed","stream_id":"7fh60509"}
+{"time":"2025-04-08T12:51:39.8224516-05:00","level":"INFO","msg":"stream: closed","id":"7fh60509"}

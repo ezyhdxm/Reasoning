@@ -1,0 +1,9 @@
+{"time":"2025-04-08T17:40:22.1398589-05:00","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2025-04-08T17:40:22.1408639-05:00","level":"INFO","msg":"created symlink","path":"C:\\Users\\Hao\\Downloads\\LLM\\Reasoning\\wandb\\run-20250408_174020-q8us265p\\logs\\debug-core.log"}
+{"time":"2025-04-08T17:40:22.2528199-05:00","level":"INFO","msg":"created new stream","id":"q8us265p"}
+{"time":"2025-04-08T17:40:22.2528199-05:00","level":"INFO","msg":"stream: started","id":"q8us265p"}
+{"time":"2025-04-08T17:40:22.2528199-05:00","level":"INFO","msg":"handler: started","stream_id":"q8us265p"}
+{"time":"2025-04-08T17:40:22.2528199-05:00","level":"INFO","msg":"sender: started","stream_id":"q8us265p"}
+{"time":"2025-04-08T17:40:22.2528199-05:00","level":"INFO","msg":"writer: Do: started","stream_id":"q8us265p"}
+{"time":"2025-04-08T17:40:22.5439936-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-08T17:40:32.5446891-05:00","level":"ERROR","msg":"monitor: disk: error sampling metrics: Incorrect function."}

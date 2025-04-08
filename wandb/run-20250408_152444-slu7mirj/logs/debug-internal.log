@@ -1,0 +1,20 @@
+{"time":"2025-04-08T15:24:46.3134685-05:00","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2025-04-08T15:24:46.3134685-05:00","level":"INFO","msg":"created symlink","path":"C:\\Users\\Hao\\Downloads\\LLM\\Reasoning\\wandb\\run-20250408_152444-slu7mirj\\logs\\debug-core.log"}
+{"time":"2025-04-08T15:24:46.4220926-05:00","level":"INFO","msg":"created new stream","id":"slu7mirj"}
+{"time":"2025-04-08T15:24:46.4220926-05:00","level":"INFO","msg":"stream: started","id":"slu7mirj"}
+{"time":"2025-04-08T15:24:46.4220926-05:00","level":"INFO","msg":"writer: Do: started","stream_id":"slu7mirj"}
+{"time":"2025-04-08T15:24:46.4220926-05:00","level":"INFO","msg":"sender: started","stream_id":"slu7mirj"}
+{"time":"2025-04-08T15:24:46.4220926-05:00","level":"INFO","msg":"handler: started","stream_id":"slu7mirj"}
+{"time":"2025-04-08T15:24:46.7229051-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-08T15:24:56.7232258-05:00","level":"ERROR","msg":"monitor: disk: error sampling metrics: Incorrect function."}
+{"time":"2025-04-08T15:25:08.001475-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-08T15:34:56.1794647-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-08T15:34:56.4421587-05:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-08T15:34:56.4428552-05:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-08T15:34:57.4517272-05:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"saving job artifact","runtime_seconds":0.7751195}],"total_operations":1}}
+{"time":"2025-04-08T15:34:58.1872729-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-08T15:34:59.4136018-05:00","level":"INFO","msg":"stream: closing","id":"slu7mirj"}
+{"time":"2025-04-08T15:34:59.4136018-05:00","level":"INFO","msg":"handler: closed","stream_id":"slu7mirj"}
+{"time":"2025-04-08T15:34:59.4136018-05:00","level":"INFO","msg":"writer: Close: closed","stream_id":"slu7mirj"}
+{"time":"2025-04-08T15:34:59.4136018-05:00","level":"INFO","msg":"sender: closed","stream_id":"slu7mirj"}
+{"time":"2025-04-08T15:34:59.4136018-05:00","level":"INFO","msg":"stream: closed","id":"slu7mirj"}

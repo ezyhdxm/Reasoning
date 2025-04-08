@@ -6,3 +6,8 @@
 {"time":"2025-04-08T01:32:12.0080867-05:00","level":"INFO","msg":"sender: started","stream_id":"ki0xnj41"}
 {"time":"2025-04-08T01:32:12.0080867-05:00","level":"INFO","msg":"handler: started","stream_id":"ki0xnj41"}
 {"time":"2025-04-08T01:32:12.2289071-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-08T01:32:22.229309-05:00","level":"ERROR","msg":"monitor: disk: error sampling metrics: Incorrect function."}
+{"time":"2025-04-08T01:39:32.2363368-05:00","level":"ERROR","msg":"monitor: memory: error sampling metrics: The parameter is incorrect."}
+{"time":"2025-04-08T01:39:32.2511208-05:00","level":"ERROR","msg":"monitor: cpu: error sampling metrics: could not get CreationDate: The parameter is incorrect.\ncouldn't find pid: 14820"}
+{"time":"2025-04-08T13:35:22.1114941-05:00","level":"ERROR","msg":"HTTP error","status":404,"method":"POST","url":"https://api.wandb.ai/files/hyan84-university-of-wisconsin-madison/Reasoning/ki0xnj41/file_stream"}
+{"time":"2025-04-08T13:35:22.1114941-05:00","level":"ERROR+4","msg":"filestream: fatal error: filestream: failed to upload: 404 Not Found path=files/hyan84-university-of-wisconsin-madison/Reasoning/ki0xnj41/file_stream: {\"error\":\"run Reasoning/ki0xnj41 not found while streaming file\"}"}

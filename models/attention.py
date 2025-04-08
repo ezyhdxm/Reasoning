@@ -69,11 +69,9 @@ class MultiHeadAttention(nn.Module):
         self.out = nn.Linear(self.emb_dim, self.emb_dim, bias=config.model.bias)
         if config.training.freeze_out:
             self.out.weight.requires_grad_(False)
-        seq_len = config.task.max_variables * 8 - 14
-        self.mask = torch.tril(torch.ones((seq_len, seq_len), device=config.device)).unsqueeze(0).unsqueeze(1) # TODO: make self.mask a register_buffer
+        # self.mask = torch.tril(torch.ones((config.task.max_seq_len, config.task.max_seq_len), device=config.device)).unsqueeze(0).unsqueeze(1) # TODO: make self.mask a register_buffer
         self.get_attn = config.training.get_attn
         self.pos_enc = config.model.pos_enc
-        self.seq_len = seq_len
         self.scale = self.head_dim ** 0.5
         self.flash = config.model.flash
         self.dropout = config.model.dropout if config.model.dropout else 0.
@@ -89,25 +87,30 @@ class MultiHeadAttention(nn.Module):
                 raise ValueError("Flash Attention with RPE is currently only supported on CUDA devices.") # TODO: pay a closer look to flex_attention
         
         elif self.pos_enc == "rotary":
-            self.freqs_cis = precompute_freqs_cis(self.head_dim, seq_len * 2, # config.rotary_theta,
+            self.freqs_cis = precompute_freqs_cis(self.head_dim, config.model.pos_max_len * 2, # config.rotary_theta,
             ).to(config.device)
         elif self.pos_enc == "alibi":
             self.alibi_emb = AliBiPositionalEncoding(self.n_head)
     
 
-    def forward(self, x, get_attn): # x: (B,T,C)
+    def forward(self, x, get_attn=False, mask=None): # x: (B,T,C)
+        if mask is not None:
+            assert mask.dtype == torch.bool, "Mask must be a boolean tensor."
         batch_size, seq_len, _ = x.size()
+
         Q = self.query(x).view(batch_size, seq_len, self.n_head, self.head_dim).transpose(1,2) # (B,H,T,D)
         K = self.key(x).view(batch_size, seq_len, self.n_head, self.head_dim).transpose(1,2) # (B,H,T,D)
         V = self.value(x).view(batch_size, seq_len, self.n_head, self.head_dim).transpose(1,2) # (B,H,T,D)
+
         if self.pos_enc == "rotary":
-            T = Q.size(2)
-            # expected shape for apply_rotary_emb: (batch_size, max_seq_len, num_head, d_head)
-            Q, K = apply_rotary_emb(Q.transpose(1, 2), K.transpose(1, 2), freqs_cis=self.freqs_cis[:T])
+            Q, K = apply_rotary_emb(Q.transpose(1, 2), K.transpose(1, 2), freqs_cis=self.freqs_cis[:seq_len])
             Q, K = Q.transpose(1, 2), K.transpose(1, 2)
             
         if self.flash and (not get_attn):
-            out = F.scaled_dot_product_attention(Q, K, V, attn_mask=None, dropout_p=self.dropout, is_causal=True)
+            if mask is None:
+                out = F.scaled_dot_product_attention(Q, K, V, dropout_p=self.dropout, is_causal=True)
+            else:
+                out = F.scaled_dot_product_attention(Q, K, V, dropout_p=self.dropout, attn_mask=mask)
             out = out.transpose(1,2).contiguous().view(batch_size,seq_len,-1) # (B,T,C)
             out = self.out(out)
             return out, -1
@@ -121,8 +124,10 @@ class MultiHeadAttention(nn.Module):
                 attn_score += attn_score2 / self.scale
             elif self.pos_enc=="alibi":
                 attn_score += self.alibi_emb(self.seq_len)
+            assert mask is not None, "Mask must be provided for causal attention when not using flash attention."
+            
+            attn_score = attn_score.masked_fill(~mask, -float("inf"))
 
-            attn_score = attn_score.masked_fill(self.mask==0, -float("inf"))
             attn = F.softmax(attn_score, dim=-1) # (B,H,T,T)
             out = attn @ V # (B,H,T,D)
             if self.pos_enc == "rpe":

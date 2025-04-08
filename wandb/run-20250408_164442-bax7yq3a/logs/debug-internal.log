@@ -1,0 +1,27 @@
+{"time":"2025-04-08T16:44:44.3043959-05:00","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2025-04-08T16:44:44.3043959-05:00","level":"INFO","msg":"created symlink","path":"C:\\Users\\Hao\\Downloads\\LLM\\Reasoning\\wandb\\run-20250408_164442-bax7yq3a\\logs\\debug-core.log"}
+{"time":"2025-04-08T16:44:44.4206317-05:00","level":"INFO","msg":"created new stream","id":"bax7yq3a"}
+{"time":"2025-04-08T16:44:44.4206317-05:00","level":"INFO","msg":"stream: started","id":"bax7yq3a"}
+{"time":"2025-04-08T16:44:44.4206317-05:00","level":"INFO","msg":"writer: Do: started","stream_id":"bax7yq3a"}
+{"time":"2025-04-08T16:44:44.4206317-05:00","level":"INFO","msg":"sender: started","stream_id":"bax7yq3a"}
+{"time":"2025-04-08T16:44:44.4206317-05:00","level":"INFO","msg":"handler: started","stream_id":"bax7yq3a"}
+{"time":"2025-04-08T16:44:45.0581981-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-08T16:44:55.0585467-05:00","level":"ERROR","msg":"monitor: disk: error sampling metrics: Incorrect function."}
+{"time":"2025-04-08T16:47:16.2255302-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-08T16:51:45.6894321-05:00","level":"ERROR","msg":"HTTP error","status":404,"method":"POST","url":"https://api.wandb.ai/files/hyan84-university-of-wisconsin-madison/Reasoning/bax7yq3a/file_stream"}
+{"time":"2025-04-08T16:51:45.6894321-05:00","level":"ERROR+4","msg":"filestream: fatal error: filestream: failed to upload: 404 Not Found path=files/hyan84-university-of-wisconsin-madison/Reasoning/bax7yq3a/file_stream: {\"error\":\"run Reasoning/bax7yq3a not found while streaming file\"}"}
+{"time":"2025-04-08T16:52:47.3864516-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-08T16:52:47.3977596-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-08T16:52:48.9977251-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-08T16:53:08.1267267-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-08T16:53:17.0831409-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-08T16:53:17.1012723-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-08T16:53:31.7171128-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-08T16:53:31.8834315-05:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-08T16:53:31.8839366-05:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-08T16:53:31.9544004-05:00","level":"INFO","msg":"api: retrying HTTP error","status":409,"url":"https://api.wandb.ai/graphql"}
+{"time":"2025-04-08T16:53:32.8839855-05:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"updating run config","runtime_seconds":1.0012434,"error_status":"retrying HTTP 409 Conflict"}],"total_operations":1}}
+{"time":"2025-04-08T16:53:34.4924448-05:00","level":"INFO","msg":"api: retrying HTTP error","status":409,"url":"https://api.wandb.ai/graphql"}
+{"time":"2025-04-08T16:53:38.7840137-05:00","level":"INFO","msg":"api: retrying HTTP error","status":409,"url":"https://api.wandb.ai/graphql"}
+{"time":"2025-04-08T16:53:47.8793203-05:00","level":"INFO","msg":"api: retrying HTTP error","status":409,"url":"https://api.wandb.ai/graphql"}
+{"time":"2025-04-08T16:54:07.1028818-05:00","level":"INFO","msg":"api: retrying HTTP error","status":409,"url":"https://api.wandb.ai/graphql"}

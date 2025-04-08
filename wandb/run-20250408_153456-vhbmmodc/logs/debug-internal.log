@@ -1,0 +1,18 @@
+{"time":"2025-04-08T15:34:59.4168469-05:00","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2025-04-08T15:34:59.4168469-05:00","level":"INFO","msg":"created symlink","path":"C:\\Users\\Hao\\Downloads\\LLM\\Reasoning\\wandb\\run-20250408_153456-vhbmmodc\\logs\\debug-core.log"}
+{"time":"2025-04-08T15:34:59.5265183-05:00","level":"INFO","msg":"created new stream","id":"vhbmmodc"}
+{"time":"2025-04-08T15:34:59.5265183-05:00","level":"INFO","msg":"stream: started","id":"vhbmmodc"}
+{"time":"2025-04-08T15:34:59.5265183-05:00","level":"INFO","msg":"writer: Do: started","stream_id":"vhbmmodc"}
+{"time":"2025-04-08T15:34:59.5265183-05:00","level":"INFO","msg":"sender: started","stream_id":"vhbmmodc"}
+{"time":"2025-04-08T15:34:59.5265183-05:00","level":"INFO","msg":"handler: started","stream_id":"vhbmmodc"}
+{"time":"2025-04-08T15:34:59.8782863-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-08T15:35:09.8788282-05:00","level":"ERROR","msg":"monitor: disk: error sampling metrics: Incorrect function."}
+{"time":"2025-04-08T15:41:58.573783-05:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-08T15:41:58.5748689-05:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-08T15:41:59.1143189-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-08T15:41:59.3103726-05:00","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2025-04-08T15:42:00.3327744-05:00","level":"INFO","msg":"stream: closing","id":"vhbmmodc"}
+{"time":"2025-04-08T15:42:00.3327744-05:00","level":"INFO","msg":"handler: closed","stream_id":"vhbmmodc"}
+{"time":"2025-04-08T15:42:00.3327744-05:00","level":"INFO","msg":"writer: Close: closed","stream_id":"vhbmmodc"}
+{"time":"2025-04-08T15:42:00.3327744-05:00","level":"INFO","msg":"sender: closed","stream_id":"vhbmmodc"}
+{"time":"2025-04-08T15:42:00.3334404-05:00","level":"INFO","msg":"stream: closed","id":"vhbmmodc"}

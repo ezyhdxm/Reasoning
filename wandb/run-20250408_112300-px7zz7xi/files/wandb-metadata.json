@@ -1,0 +1,42 @@
+{
+  "os":  "Windows-11-10.0.26100-SP0",
+  "python":  "3.12.3",
+  "startedAt":  "2025-04-08T16:23:03.968250Z",
+  "program":  "arithmetic_expr.ipynb",
+  "git":  {
+    "remote":  "https://github.com/ezyhdxm/Reasoning.git",
+    "commit":  "e9466d852ba6b5f6db1a8f33867faa29502fa3e6"
+  },
+  "email":  "hyan84@wisc.edu",
+  "root":  "C:\\Users\\Hao\\Downloads\\LLM\\Reasoning",
+  "host":  "DESKTOP-DQ4LRS3",
+  "username":  "Hao",
+  "executable":  "C:\\Users\\Hao\\anaconda3\\envs\\LLM\\python.exe",
+  "codePathLocal":  "arithmetic_expr.ipynb",
+  "cpu_count":  16,
+  "cpu_count_logical":  22,
+  "gpu":  "NVIDIA GeForce RTX 3090 Ti",
+  "gpu_count":  1,
+  "disk":  {
+    "/":  {
+      "total":  "999032877056",
+      "used":  "508352700416"
+    }
+  },
+  "memory":  {
+    "total":  "34013945856"
+  },
+  "cpu":  {
+    "count":  16,
+    "countLogical":  22
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "NVIDIA GeForce RTX 3090 Ti",
+      "memoryTotal":  "24146608128",
+      "cudaCores":  10752,
+      "architecture":  "Ampere"
+    }
+  ],
+  "cudaVersion":  "12.7"
+}
