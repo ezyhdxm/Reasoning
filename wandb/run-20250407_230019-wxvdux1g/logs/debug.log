@@ -1,0 +1,104 @@
+2025-04-07 23:00:19,945 INFO    MainThread:65829 [wandb_setup.py:_flush():67] Current SDK version is 0.19.8
+2025-04-07 23:00:19,945 INFO    MainThread:65829 [wandb_setup.py:_flush():67] Configure stats pid to 65829
+2025-04-07 23:00:19,945 INFO    MainThread:65829 [wandb_setup.py:_flush():67] Loading settings from /Users/hyan/.config/wandb/settings
+2025-04-07 23:00:19,945 INFO    MainThread:65829 [wandb_setup.py:_flush():67] Loading settings from /Users/hyan/Downloads/LLM/Reasoning/Reasoning/wandb/settings
+2025-04-07 23:00:19,945 INFO    MainThread:65829 [wandb_setup.py:_flush():67] Loading settings from environment variables
+2025-04-07 23:00:19,946 INFO    MainThread:65829 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /Users/hyan/Downloads/LLM/Reasoning/Reasoning/wandb/run-20250407_230019-wxvdux1g/logs/debug.log
+2025-04-07 23:00:19,946 INFO    MainThread:65829 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /Users/hyan/Downloads/LLM/Reasoning/Reasoning/wandb/run-20250407_230019-wxvdux1g/logs/debug-internal.log
+2025-04-07 23:00:19,946 INFO    MainThread:65829 [wandb_init.py:monkeypatch_ipython():599] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x30d08ba90>
+2025-04-07 23:00:19,947 INFO    MainThread:65829 [wandb_init.py:init():761] calling init triggers
+2025-04-07 23:00:19,950 INFO    MainThread:65829 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'_fields': {'vocab_size': 16, 'device': 'cpu', 'work_dir': 'results', 'batch_size': 256, 'test_size': 4096, 'task': max_variables: 12
+, 'model': activation: &id001 !!python/tuple
+- false
+- true
+bias: false
+dropout: null
+emb_dim: 64
+ff_dim: 128
+flash: true
+layer_norm: false
+mask: true
+mlp: *id001
+mlp_bias: true
+num_heads: !!python/tuple
+- 1
+- 1
+num_layers: 2
+pos_enc: rotary
+pos_max_len: 256
+, 'training': eval_iter: 100
+freeze_out: false
+freeze_value: false
+get_attn: 1000
+get_checkpoints: 500
+identity_query: false
+label_smoothing: 0.1
+lr: 0.001
+optimizer: adam
+schedule: triangle
+total_steps: 10000
+warmup_steps: 5000
+weight_decay: 0.01
+, 'wandb': project: Reasoning
+}, '_locked': False, '_type_safe': True, '_convert_dict': True, '_allow_dotted_keys': False, '_sort_keys': True, '_wandb': {}}
+2025-04-07 23:00:19,950 INFO    MainThread:65829 [wandb_init.py:init():784] starting backend
+2025-04-07 23:00:19,950 INFO    MainThread:65829 [wandb_init.py:init():788] sending inform_init request
+2025-04-07 23:00:19,978 INFO    MainThread:65829 [backend.py:_multiprocessing_setup():101] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2025-04-07 23:00:19,978 INFO    MainThread:65829 [wandb_init.py:init():798] backend started and connected
+2025-04-07 23:00:19,986 INFO    MainThread:65829 [wandb_run.py:_label_probe_notebook():1204] probe notebook
+2025-04-07 23:00:19,987 INFO    MainThread:65829 [wandb_init.py:init():891] updated telemetry
+2025-04-07 23:00:20,013 INFO    MainThread:65829 [wandb_init.py:init():915] communicating run to backend with 90.0 second timeout
+2025-04-07 23:00:20,348 INFO    MainThread:65829 [wandb_init.py:init():990] starting run threads in backend
+2025-04-07 23:00:20,460 INFO    MainThread:65829 [wandb_run.py:_console_start():2375] atexit reg
+2025-04-07 23:00:20,460 INFO    MainThread:65829 [wandb_run.py:_redirect():2227] redirect: wrap_raw
+2025-04-07 23:00:20,460 INFO    MainThread:65829 [wandb_run.py:_redirect():2292] Wrapping output streams.
+2025-04-07 23:00:20,460 INFO    MainThread:65829 [wandb_run.py:_redirect():2315] Redirects installed.
+2025-04-07 23:00:20,462 INFO    MainThread:65829 [wandb_init.py:init():1032] run started, returning control to user process
+2025-04-07 23:07:00,607 INFO    MainThread:65829 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-04-07 23:07:00,608 INFO    MainThread:65829 [wandb_init.py:_pause_backend():564] pausing backend
+2025-04-07 23:10:00,565 INFO    MainThread:65829 [wandb_init.py:_resume_backend():569] resuming backend
+2025-04-07 23:10:00,569 INFO    MainThread:65829 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-04-07 23:10:00,569 INFO    MainThread:65829 [wandb_init.py:_pause_backend():564] pausing backend
+2025-04-07 23:10:04,375 INFO    MainThread:65829 [wandb_init.py:_resume_backend():569] resuming backend
+2025-04-07 23:10:04,407 INFO    MainThread:65829 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /Users/hyan/Downloads/LLM/Reasoning/Reasoning/wandb/run-20250407_231004-jx1f6ytz/logs/debug.log
+2025-04-07 23:10:04,407 INFO    MainThread:65829 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /Users/hyan/Downloads/LLM/Reasoning/Reasoning/wandb/run-20250407_231004-jx1f6ytz/logs/debug-internal.log
+2025-04-07 23:10:04,408 INFO    MainThread:65829 [wandb_init.py:init():761] calling init triggers
+2025-04-07 23:10:04,408 INFO    MainThread:65829 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'_fields': {'vocab_size': 16, 'device': 'cpu', 'work_dir': 'results', 'batch_size': 256, 'test_size': 4096, 'task': max_variables: 12
+, 'model': activation: &id001 !!python/tuple
+- false
+- true
+bias: false
+dropout: null
+emb_dim: 64
+ff_dim: 128
+flash: true
+layer_norm: false
+mask: true
+mlp: *id001
+mlp_bias: true
+num_heads: !!python/tuple
+- 1
+- 1
+num_layers: 2
+pos_enc: rotary
+pos_max_len: 256
+, 'training': eval_iter: 100
+freeze_out: false
+freeze_value: false
+get_attn: 1000
+get_checkpoints: 500
+identity_query: false
+label_smoothing: 0.1
+lr: 0.001
+optimizer: adam
+schedule: triangle
+total_steps: 10000
+warmup_steps: 5000
+weight_decay: 0.01
+, 'wandb': project: Reasoning
+}, '_locked': False, '_type_safe': True, '_convert_dict': True, '_allow_dotted_keys': False, '_sort_keys': True, '_wandb': {}}
+2025-04-07 23:10:04,408 INFO    MainThread:65829 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-04-07 23:10:27,951 INFO    MainThread:65829 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-04-07 23:10:27,951 INFO    MainThread:65829 [wandb_init.py:_pause_backend():564] pausing backend

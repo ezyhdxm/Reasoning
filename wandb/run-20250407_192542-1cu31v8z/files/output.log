@@ -1,0 +1,283 @@
+Start training...
+===================================================================================================================
+Layer (type:depth-idx)                   Input Shape               Output Shape              Param #
+===================================================================================================================
+Transformer                              [256, 82]                 [256, 82, 16]             --
+├─Embedding: 1-1                         [256, 82]                 [256, 82, 64]             1,024
+├─ModuleList: 1-2                        --                        --                        --
+│    └─TFBlock: 2-1                      [256, 82, 64]             [256, 82, 64]             --
+│    │    └─Identity: 3-1                [256, 82, 64]             [256, 82, 64]             --
+│    │    └─MultiHeadAttention: 3-2      [256, 82, 64]             [256, 82, 64]             16,384
+│    └─TFBlock: 2-2                      [256, 82, 64]             [256, 82, 64]             --
+│    │    └─Identity: 3-3                [256, 82, 64]             [256, 82, 64]             --
+│    │    └─MultiHeadAttention: 3-4      [256, 82, 64]             [256, 82, 64]             16,384
+│    │    └─Identity: 3-5                [256, 82, 64]             [256, 82, 64]             --
+│    │    └─Sequential: 3-6              [256, 82, 64]             [256, 82, 64]             16,576
+├─Linear: 1-3                            [256, 82, 64]             [256, 82, 16]             1,040
+===================================================================================================================
+Total params: 51,408
+Trainable params: 51,408
+Non-trainable params: 0
+Total mult-adds (Units.MEGABYTES): 13.16
+===================================================================================================================
+Input size (MB): 0.17
+Forward/backward pass size (MB): 131.66
+Params size (MB): 0.21
+Estimated Total Size (MB): 132.04
+===================================================================================================================
+Initialized model, optimizer, and train state
+Initialized data samplers
+Start training...
+===================================================================================================================
+Layer (type:depth-idx)                   Input Shape               Output Shape              Param #
+===================================================================================================================
+Transformer                              [256, 82]                 [256, 82, 16]             --
+├─Embedding: 1-1                         [256, 82]                 [256, 82, 64]             1,024
+├─ModuleList: 1-2                        --                        --                        --
+│    └─TFBlock: 2-1                      [256, 82, 64]             [256, 82, 64]             --
+│    │    └─Identity: 3-1                [256, 82, 64]             [256, 82, 64]             --
+│    │    └─MultiHeadAttention: 3-2      [256, 82, 64]             [256, 82, 64]             16,384
+│    └─TFBlock: 2-2                      [256, 82, 64]             [256, 82, 64]             --
+│    │    └─Identity: 3-3                [256, 82, 64]             [256, 82, 64]             --
+│    │    └─MultiHeadAttention: 3-4      [256, 82, 64]             [256, 82, 64]             16,384
+│    │    └─Identity: 3-5                [256, 82, 64]             [256, 82, 64]             --
+│    │    └─Sequential: 3-6              [256, 82, 64]             [256, 82, 64]             16,576
+├─Linear: 1-3                            [256, 82, 64]             [256, 82, 16]             1,040
+===================================================================================================================
+Total params: 51,408
+Trainable params: 51,408
+Non-trainable params: 0
+Total mult-adds (Units.MEGABYTES): 13.16
+===================================================================================================================
+Input size (MB): 0.17
+Forward/backward pass size (MB): 131.66
+Params size (MB): 0.21
+Estimated Total Size (MB): 132.04
+===================================================================================================================
+Initialized model, optimizer, and train state
+Initialized data samplers
+Start training...
+===================================================================================================================
+Layer (type:depth-idx)                   Input Shape               Output Shape              Param #
+===================================================================================================================
+Transformer                              [256, 82]                 [256, 82, 16]             --
+├─Embedding: 1-1                         [256, 82]                 [256, 82, 64]             1,024
+├─ModuleList: 1-2                        --                        --                        --
+│    └─TFBlock: 2-1                      [256, 82, 64]             [256, 82, 64]             --
+│    │    └─Identity: 3-1                [256, 82, 64]             [256, 82, 64]             --
+│    │    └─MultiHeadAttention: 3-2      [256, 82, 64]             [256, 82, 64]             16,384
+│    └─TFBlock: 2-2                      [256, 82, 64]             [256, 82, 64]             --
+│    │    └─Identity: 3-3                [256, 82, 64]             [256, 82, 64]             --
+│    │    └─MultiHeadAttention: 3-4      [256, 82, 64]             [256, 82, 64]             16,384
+│    │    └─Identity: 3-5                [256, 82, 64]             [256, 82, 64]             --
+│    │    └─Sequential: 3-6              [256, 82, 64]             [256, 82, 64]             16,576
+├─Linear: 1-3                            [256, 82, 64]             [256, 82, 16]             1,040
+===================================================================================================================
+Total params: 51,408
+Trainable params: 51,408
+Non-trainable params: 0
+Total mult-adds (Units.MEGABYTES): 13.16
+===================================================================================================================
+Input size (MB): 0.17
+Forward/backward pass size (MB): 131.66
+Params size (MB): 0.21
+Estimated Total Size (MB): 132.04
+===================================================================================================================
+Initialized model, optimizer, and train state
+Initialized data samplers
+Start training...
+torch.Size([20992])
+torch.Size([21248])
+===================================================================================================================
+Layer (type:depth-idx)                   Input Shape               Output Shape              Param #
+===================================================================================================================
+Transformer                              [256, 82]                 [256, 82, 16]             --
+├─Embedding: 1-1                         [256, 82]                 [256, 82, 64]             1,024
+├─ModuleList: 1-2                        --                        --                        --
+│    └─TFBlock: 2-1                      [256, 82, 64]             [256, 82, 64]             --
+│    │    └─Identity: 3-1                [256, 82, 64]             [256, 82, 64]             --
+│    │    └─MultiHeadAttention: 3-2      [256, 82, 64]             [256, 82, 64]             16,384
+│    └─TFBlock: 2-2                      [256, 82, 64]             [256, 82, 64]             --
+│    │    └─Identity: 3-3                [256, 82, 64]             [256, 82, 64]             --
+│    │    └─MultiHeadAttention: 3-4      [256, 82, 64]             [256, 82, 64]             16,384
+│    │    └─Identity: 3-5                [256, 82, 64]             [256, 82, 64]             --
+│    │    └─Sequential: 3-6              [256, 82, 64]             [256, 82, 64]             16,576
+├─Linear: 1-3                            [256, 82, 64]             [256, 82, 16]             1,040
+===================================================================================================================
+Total params: 51,408
+Trainable params: 51,408
+Non-trainable params: 0
+Total mult-adds (Units.MEGABYTES): 13.16
+===================================================================================================================
+Input size (MB): 0.17
+Forward/backward pass size (MB): 131.66
+Params size (MB): 0.21
+Estimated Total Size (MB): 132.04
+===================================================================================================================
+Initialized model, optimizer, and train state
+Initialized data samplers
+Start training...
+torch.Size([256, 82])
+torch.Size([256, 83])
+===================================================================================================================
+Layer (type:depth-idx)                   Input Shape               Output Shape              Param #
+===================================================================================================================
+Transformer                              [256, 82]                 [256, 82, 16]             --
+├─Embedding: 1-1                         [256, 82]                 [256, 82, 64]             1,024
+├─ModuleList: 1-2                        --                        --                        --
+│    └─TFBlock: 2-1                      [256, 82, 64]             [256, 82, 64]             --
+│    │    └─Identity: 3-1                [256, 82, 64]             [256, 82, 64]             --
+│    │    └─MultiHeadAttention: 3-2      [256, 82, 64]             [256, 82, 64]             16,384
+│    └─TFBlock: 2-2                      [256, 82, 64]             [256, 82, 64]             --
+│    │    └─Identity: 3-3                [256, 82, 64]             [256, 82, 64]             --
+│    │    └─MultiHeadAttention: 3-4      [256, 82, 64]             [256, 82, 64]             16,384
+│    │    └─Identity: 3-5                [256, 82, 64]             [256, 82, 64]             --
+│    │    └─Sequential: 3-6              [256, 82, 64]             [256, 82, 64]             16,576
+├─Linear: 1-3                            [256, 82, 64]             [256, 82, 16]             1,040
+===================================================================================================================
+Total params: 51,408
+Trainable params: 51,408
+Non-trainable params: 0
+Total mult-adds (Units.MEGABYTES): 13.16
+===================================================================================================================
+Input size (MB): 0.17
+Forward/backward pass size (MB): 131.66
+Params size (MB): 0.21
+Estimated Total Size (MB): 132.04
+===================================================================================================================
+Initialized model, optimizer, and train state
+Initialized data samplers
+Start training...
+Step: 100
+===================================================================================================================
+Layer (type:depth-idx)                   Input Shape               Output Shape              Param #
+===================================================================================================================
+Transformer                              [256, 82]                 [256, 82, 16]             --
+├─Embedding: 1-1                         [256, 82]                 [256, 82, 64]             1,024
+├─ModuleList: 1-2                        --                        --                        --
+│    └─TFBlock: 2-1                      [256, 82, 64]             [256, 82, 64]             --
+│    │    └─Identity: 3-1                [256, 82, 64]             [256, 82, 64]             --
+│    │    └─MultiHeadAttention: 3-2      [256, 82, 64]             [256, 82, 64]             16,384
+│    └─TFBlock: 2-2                      [256, 82, 64]             [256, 82, 64]             --
+│    │    └─Identity: 3-3                [256, 82, 64]             [256, 82, 64]             --
+│    │    └─MultiHeadAttention: 3-4      [256, 82, 64]             [256, 82, 64]             16,384
+│    │    └─Identity: 3-5                [256, 82, 64]             [256, 82, 64]             --
+│    │    └─Sequential: 3-6              [256, 82, 64]             [256, 82, 64]             16,576
+├─Linear: 1-3                            [256, 82, 64]             [256, 82, 16]             1,040
+===================================================================================================================
+Total params: 51,408
+Trainable params: 51,408
+Non-trainable params: 0
+Total mult-adds (Units.MEGABYTES): 13.16
+===================================================================================================================
+Input size (MB): 0.17
+Forward/backward pass size (MB): 131.66
+Params size (MB): 0.21
+Estimated Total Size (MB): 132.04
+===================================================================================================================
+Initialized model, optimizer, and train state
+Initialized data samplers
+Start training...
+Step: 100
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 1 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 2 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 3 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 4 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 5 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 6 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 7 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 8 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 9 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 10 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 11 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 12 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 13 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 14 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 15 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 16 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 17 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 18 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 19 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 20 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 21 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 22 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 23 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 24 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 25 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 26 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 27 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 28 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 29 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 30 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 31 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 32 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 33 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 34 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 35 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 36 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 37 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 38 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 39 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 40 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 41 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 42 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 43 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 44 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 45 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 46 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 47 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 48 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 49 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 50 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 51 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 52 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 53 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 54 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 55 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 56 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 57 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 58 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 59 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 60 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 61 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 62 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 63 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 64 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 65 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 66 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 67 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 68 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 69 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 70 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 71 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 72 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 73 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 74 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 75 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 76 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 77 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 78 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 79 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 80 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 81 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 82 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 83 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 84 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 85 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 86 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 87 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 88 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 89 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 90 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 91 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 92 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 93 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 94 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 95 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 96 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 97 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 98 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 99 that is less than the current step 100. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+Step: 200
+Step: 300
+Step: 400

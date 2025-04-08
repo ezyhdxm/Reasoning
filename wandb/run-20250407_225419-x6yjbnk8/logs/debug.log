@@ -1,0 +1,53 @@
+2025-04-07 22:54:19,907 INFO    MainThread:59072 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /Users/hyan/Downloads/LLM/Reasoning/Reasoning/wandb/run-20250407_225419-x6yjbnk8/logs/debug.log
+2025-04-07 22:54:19,907 INFO    MainThread:59072 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /Users/hyan/Downloads/LLM/Reasoning/Reasoning/wandb/run-20250407_225419-x6yjbnk8/logs/debug-internal.log
+2025-04-07 22:54:19,908 INFO    MainThread:59072 [wandb_init.py:init():761] calling init triggers
+2025-04-07 22:54:19,908 INFO    MainThread:59072 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'_fields': {'vocab_size': 16, 'device': 'cpu', 'work_dir': 'results', 'batch_size': 256, 'test_size': 4096, 'task': max_variables: 12
+, 'model': activation: &id001 !!python/tuple
+- false
+- true
+bias: false
+dropout: null
+emb_dim: 64
+ff_dim: 128
+flash: true
+layer_norm: false
+mask: true
+mlp: *id001
+mlp_bias: true
+num_heads: !!python/tuple
+- 1
+- 1
+num_layers: 2
+pos_enc: rotary
+pos_max_len: 256
+, 'training': eval_iter: 100
+freeze_out: false
+freeze_value: false
+get_attn: 1000
+get_checkpoints: 500
+identity_query: false
+label_smoothing: 0.1
+lr: 0.001
+optimizer: adam
+schedule: triangle
+total_steps: 40000
+warmup_steps: 20000
+weight_decay: 0.01
+, 'wandb': project: Reasoning
+}, '_locked': False, '_type_safe': True, '_convert_dict': True, '_allow_dotted_keys': False, '_sort_keys': True, '_wandb': {}}
+2025-04-07 22:54:19,908 INFO    MainThread:59072 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-04-07 22:58:19,610 INFO    MainThread:59072 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-04-07 22:58:19,611 INFO    MainThread:59072 [wandb_init.py:_pause_backend():564] pausing backend
+2025-04-07 22:58:32,893 INFO    MainThread:59072 [wandb_init.py:_resume_backend():569] resuming backend
+2025-04-07 22:58:42,160 INFO    MainThread:59072 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-04-07 22:58:42,160 INFO    MainThread:59072 [wandb_init.py:_pause_backend():564] pausing backend
+2025-04-07 22:59:28,626 INFO    MainThread:59072 [wandb_init.py:_resume_backend():569] resuming backend
+2025-04-07 22:59:28,638 INFO    MainThread:59072 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-04-07 22:59:28,638 INFO    MainThread:59072 [wandb_init.py:_pause_backend():564] pausing backend
+2025-04-07 22:59:32,495 INFO    MainThread:59072 [wandb_init.py:_resume_backend():569] resuming backend
+2025-04-07 22:59:32,507 INFO    MainThread:59072 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-04-07 22:59:32,507 INFO    MainThread:59072 [wandb_init.py:_pause_backend():564] pausing backend
+2025-04-07 22:59:40,659 INFO    MainThread:59072 [wandb_init.py:_resume_backend():569] resuming backend
+2025-04-07 22:59:40,662 INFO    MainThread:59072 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-04-07 22:59:40,663 INFO    MainThread:59072 [wandb_init.py:_pause_backend():564] pausing backend

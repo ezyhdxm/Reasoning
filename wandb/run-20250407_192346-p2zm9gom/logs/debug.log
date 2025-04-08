@@ -1,0 +1,125 @@
+2025-04-07 19:23:46,534 INFO    MainThread:52432 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /Users/hyan/Downloads/LLM/Reasoning/Reasoning/wandb/run-20250407_192346-p2zm9gom/logs/debug.log
+2025-04-07 19:23:46,534 INFO    MainThread:52432 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /Users/hyan/Downloads/LLM/Reasoning/Reasoning/wandb/run-20250407_192346-p2zm9gom/logs/debug-internal.log
+2025-04-07 19:23:46,534 INFO    MainThread:52432 [wandb_init.py:init():761] calling init triggers
+2025-04-07 19:23:46,535 INFO    MainThread:52432 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'_fields': {'vocab_size': 16, 'device': 'cpu', 'work_dir': 'results', 'batch_size': 256, 'test_size': 4096, 'task': max_variables: 12
+, 'model': activation: &id001 !!python/tuple
+- false
+- true
+bias: false
+dropout: null
+emb_dim: 64
+ff_dim: 128
+flash: true
+layer_norm: false
+mask: true
+mlp: *id001
+mlp_bias: true
+num_heads: !!python/tuple
+- 1
+- 1
+num_layers: 2
+pos_enc: rotary
+pos_max_len: 256
+, 'training': eval_iter: 100
+freeze_out: false
+freeze_value: false
+get_attn: 1000
+get_checkpoints: 500
+identity_query: false
+label_smoothing: 0.1
+lr: 0.001
+optimizer: adam
+schedule: triangle
+total_steps: 40000
+warmup_steps: 20000
+weight_decay: 0.01
+, 'wandb': project: Reasoning
+}, '_locked': False, '_type_safe': True, '_convert_dict': True, '_allow_dotted_keys': False, '_sort_keys': True, '_wandb': {}}
+2025-04-07 19:23:46,535 INFO    MainThread:52432 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-04-07 19:23:49,403 INFO    MainThread:52432 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-04-07 19:23:49,403 INFO    MainThread:52432 [wandb_init.py:_pause_backend():564] pausing backend
+2025-04-07 19:24:13,401 INFO    MainThread:52432 [wandb_init.py:_resume_backend():569] resuming backend
+2025-04-07 19:24:13,427 INFO    MainThread:52432 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /Users/hyan/Downloads/LLM/Reasoning/Reasoning/wandb/run-20250407_192413-pde6tu4j/logs/debug.log
+2025-04-07 19:24:13,427 INFO    MainThread:52432 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /Users/hyan/Downloads/LLM/Reasoning/Reasoning/wandb/run-20250407_192413-pde6tu4j/logs/debug-internal.log
+2025-04-07 19:24:13,427 INFO    MainThread:52432 [wandb_init.py:init():761] calling init triggers
+2025-04-07 19:24:13,428 INFO    MainThread:52432 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'_fields': {'vocab_size': 16, 'device': 'cpu', 'work_dir': 'results', 'batch_size': 256, 'test_size': 4096, 'task': max_variables: 12
+, 'model': activation: &id001 !!python/tuple
+- false
+- true
+bias: false
+dropout: null
+emb_dim: 64
+ff_dim: 128
+flash: true
+layer_norm: false
+mask: true
+mlp: *id001
+mlp_bias: true
+num_heads: !!python/tuple
+- 1
+- 1
+num_layers: 2
+pos_enc: rotary
+pos_max_len: 256
+, 'training': eval_iter: 100
+freeze_out: false
+freeze_value: false
+get_attn: 1000
+get_checkpoints: 500
+identity_query: false
+label_smoothing: 0.1
+lr: 0.001
+optimizer: adam
+schedule: triangle
+total_steps: 40000
+warmup_steps: 20000
+weight_decay: 0.01
+, 'wandb': project: Reasoning
+}, '_locked': False, '_type_safe': True, '_convert_dict': True, '_allow_dotted_keys': False, '_sort_keys': True, '_wandb': {}}
+2025-04-07 19:24:13,428 INFO    MainThread:52432 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-04-07 19:24:16,284 INFO    MainThread:52432 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-04-07 19:24:16,284 INFO    MainThread:52432 [wandb_init.py:_pause_backend():564] pausing backend
+2025-04-07 19:24:36,425 INFO    MainThread:52432 [wandb_init.py:_resume_backend():569] resuming backend
+2025-04-07 19:24:36,449 INFO    MainThread:52432 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /Users/hyan/Downloads/LLM/Reasoning/Reasoning/wandb/run-20250407_192436-lcd2zluz/logs/debug.log
+2025-04-07 19:24:36,450 INFO    MainThread:52432 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /Users/hyan/Downloads/LLM/Reasoning/Reasoning/wandb/run-20250407_192436-lcd2zluz/logs/debug-internal.log
+2025-04-07 19:24:36,450 INFO    MainThread:52432 [wandb_init.py:init():761] calling init triggers
+2025-04-07 19:24:36,450 INFO    MainThread:52432 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'_fields': {'vocab_size': 16, 'device': 'cpu', 'work_dir': 'results', 'batch_size': 256, 'test_size': 4096, 'task': max_variables: 12
+, 'model': activation: &id001 !!python/tuple
+- false
+- true
+bias: false
+dropout: null
+emb_dim: 64
+ff_dim: 128
+flash: true
+layer_norm: false
+mask: true
+mlp: *id001
+mlp_bias: true
+num_heads: !!python/tuple
+- 1
+- 1
+num_layers: 2
+pos_enc: rotary
+pos_max_len: 256
+, 'training': eval_iter: 100
+freeze_out: false
+freeze_value: false
+get_attn: 1000
+get_checkpoints: 500
+identity_query: false
+label_smoothing: 0.1
+lr: 0.001
+optimizer: adam
+schedule: triangle
+total_steps: 40000
+warmup_steps: 20000
+weight_decay: 0.01
+, 'wandb': project: Reasoning
+}, '_locked': False, '_type_safe': True, '_convert_dict': True, '_allow_dotted_keys': False, '_sort_keys': True, '_wandb': {}}
+2025-04-07 19:24:36,450 INFO    MainThread:52432 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-04-07 19:24:39,288 INFO    MainThread:52432 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-04-07 19:24:39,288 INFO    MainThread:52432 [wandb_init.py:_pause_backend():564] pausing backend

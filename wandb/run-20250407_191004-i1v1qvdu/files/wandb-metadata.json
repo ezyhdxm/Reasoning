@@ -1,0 +1,44 @@
+{
+  "os": "macOS-15.3-arm64-arm-64bit",
+  "python": "CPython 3.11.11",
+  "startedAt": "2025-04-08T00:10:04.444140Z",
+  "program": "arithmetic_expr.ipynb",
+  "codePath": "arithmetic_expr.ipynb",
+  "git": {
+    "remote": "https://github.com/ezyhdxm/Reasoning.git",
+    "commit": "0f8a7c7a33c57d64300c7de20428bbc68d869e51"
+  },
+  "email": "hyan84@wisc.edu",
+  "root": "/Users/hyan/Downloads/LLM/Reasoning/Reasoning",
+  "host": "MacBook-Pro-10.local",
+  "executable": "/Users/hyan/anaconda3/envs/ICL/bin/python",
+  "codePathLocal": "arithmetic_expr.ipynb",
+  "cpu_count": 12,
+  "cpu_count_logical": 12,
+  "disk": {
+    "/": {
+      "total": "994662584320",
+      "used": "321648001024"
+    },
+    "/System/Volumes/Data": {
+      "total": "994662584320",
+      "used": "321648001024"
+    }
+  },
+  "memory": {
+    "total": "19327352832"
+  },
+  "cpu": {
+    "count": 12,
+    "countLogical": 12
+  },
+  "apple": {
+    "name": "Apple M3 Pro",
+    "ecpuCores": 6,
+    "pcpuCores": 6,
+    "gpuCores": 18,
+    "memoryGb": 18,
+    "swapTotalBytes": "2147483648",
+    "ramTotalBytes": "19327352832"
+  }
+}
