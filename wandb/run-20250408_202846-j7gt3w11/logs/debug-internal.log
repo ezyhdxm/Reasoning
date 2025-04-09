@@ -1,0 +1,22 @@
+{"time":"2025-04-08T20:28:46.4987657-05:00","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2025-04-08T20:28:46.4987657-05:00","level":"INFO","msg":"created symlink","path":"C:\\Users\\Hao\\Downloads\\LLM\\Reasoning\\wandb\\run-20250408_202846-j7gt3w11\\logs\\debug-core.log"}
+{"time":"2025-04-08T20:28:46.7411556-05:00","level":"INFO","msg":"created new stream","id":"j7gt3w11"}
+{"time":"2025-04-08T20:28:46.7416662-05:00","level":"INFO","msg":"stream: started","id":"j7gt3w11"}
+{"time":"2025-04-08T20:28:46.7416662-05:00","level":"INFO","msg":"handler: started","stream_id":"j7gt3w11"}
+{"time":"2025-04-08T20:28:46.7416662-05:00","level":"INFO","msg":"writer: Do: started","stream_id":"j7gt3w11"}
+{"time":"2025-04-08T20:28:46.7416662-05:00","level":"INFO","msg":"sender: started","stream_id":"j7gt3w11"}
+{"time":"2025-04-08T20:28:47.0547189-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-08T20:28:57.0548822-05:00","level":"ERROR","msg":"monitor: disk: error sampling metrics: Incorrect function."}
+{"time":"2025-04-08T20:30:33.7293025-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-08T20:34:11.2723284-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-08T20:34:11.2755001-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-08T20:34:16.2594257-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-08T20:34:16.4535195-05:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-08T20:34:16.4543779-05:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-08T20:34:16.464818-05:00","level":"ERROR","msg":"HTTP error","status":404,"method":"POST","url":"https://api.wandb.ai/files/hyan84-university-of-wisconsin-madison/Reasoning/j7gt3w11/file_stream"}
+{"time":"2025-04-08T20:34:16.464818-05:00","level":"ERROR+4","msg":"filestream: fatal error: filestream: failed to upload: 404 Not Found path=files/hyan84-university-of-wisconsin-madison/Reasoning/j7gt3w11/file_stream: {\"error\":\"run Reasoning/j7gt3w11 not found while streaming file\"}"}
+{"time":"2025-04-08T20:34:16.515432-05:00","level":"INFO","msg":"api: retrying HTTP error","status":409,"url":"https://api.wandb.ai/graphql"}
+{"time":"2025-04-08T20:34:17.4613976-05:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"updating run config","runtime_seconds":1.0089136,"error_status":"retrying HTTP 409 Conflict"}],"total_operations":1}}
+{"time":"2025-04-08T20:34:18.9267386-05:00","level":"INFO","msg":"api: retrying HTTP error","status":409,"url":"https://api.wandb.ai/graphql"}
+{"time":"2025-04-08T20:34:23.3114525-05:00","level":"INFO","msg":"api: retrying HTTP error","status":409,"url":"https://api.wandb.ai/graphql"}
+{"time":"2025-04-08T20:34:31.8751972-05:00","level":"INFO","msg":"api: retrying HTTP error","status":409,"url":"https://api.wandb.ai/graphql"}

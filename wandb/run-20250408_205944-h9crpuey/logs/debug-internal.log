@@ -1,0 +1,19 @@
+{"time":"2025-04-08T20:59:46.6522829-05:00","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2025-04-08T20:59:46.6522829-05:00","level":"INFO","msg":"created symlink","path":"C:\\Users\\Hao\\Downloads\\LLM\\Reasoning\\wandb\\run-20250408_205944-h9crpuey\\logs\\debug-core.log"}
+{"time":"2025-04-08T20:59:46.7671038-05:00","level":"INFO","msg":"created new stream","id":"h9crpuey"}
+{"time":"2025-04-08T20:59:46.7671038-05:00","level":"INFO","msg":"stream: started","id":"h9crpuey"}
+{"time":"2025-04-08T20:59:46.7671038-05:00","level":"INFO","msg":"writer: Do: started","stream_id":"h9crpuey"}
+{"time":"2025-04-08T20:59:46.7671038-05:00","level":"INFO","msg":"handler: started","stream_id":"h9crpuey"}
+{"time":"2025-04-08T20:59:46.7671038-05:00","level":"INFO","msg":"sender: started","stream_id":"h9crpuey"}
+{"time":"2025-04-08T20:59:47.0615865-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-08T20:59:57.0616853-05:00","level":"ERROR","msg":"monitor: disk: error sampling metrics: Incorrect function."}
+{"time":"2025-04-08T21:44:46.8249637-05:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-08T21:44:46.8255583-05:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-08T21:44:47.0833974-05:00","level":"ERROR","msg":"sender: sendDefer: failed to build job artifact","error":"CreateFile C:\\Users\\Hao\\Downloads\\LLM\\Reasoning\\<python with no main file>: The filename, directory name, or volume label syntax is incorrect."}
+{"time":"2025-04-08T21:44:47.4207578-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-08T21:44:47.6478395-05:00","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2025-04-08T21:44:48.6761894-05:00","level":"INFO","msg":"stream: closing","id":"h9crpuey"}
+{"time":"2025-04-08T21:44:48.6761894-05:00","level":"INFO","msg":"handler: closed","stream_id":"h9crpuey"}
+{"time":"2025-04-08T21:44:48.6761894-05:00","level":"INFO","msg":"sender: closed","stream_id":"h9crpuey"}
+{"time":"2025-04-08T21:44:48.6761894-05:00","level":"INFO","msg":"writer: Close: closed","stream_id":"h9crpuey"}
+{"time":"2025-04-08T21:44:48.6761894-05:00","level":"INFO","msg":"stream: closed","id":"h9crpuey"}

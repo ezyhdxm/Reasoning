@@ -1,0 +1,23 @@
+{"time":"2025-04-08T21:44:48.6791605-05:00","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2025-04-08T21:44:48.6797238-05:00","level":"INFO","msg":"created symlink","path":"C:\\Users\\Hao\\Downloads\\LLM\\Reasoning\\wandb\\run-20250408_214446-4y3aofcu\\logs\\debug-core.log"}
+{"time":"2025-04-08T21:44:48.7918237-05:00","level":"INFO","msg":"created new stream","id":"4y3aofcu"}
+{"time":"2025-04-08T21:44:48.7918237-05:00","level":"INFO","msg":"stream: started","id":"4y3aofcu"}
+{"time":"2025-04-08T21:44:48.7918237-05:00","level":"INFO","msg":"writer: Do: started","stream_id":"4y3aofcu"}
+{"time":"2025-04-08T21:44:48.7918237-05:00","level":"INFO","msg":"sender: started","stream_id":"4y3aofcu"}
+{"time":"2025-04-08T21:44:48.7918237-05:00","level":"INFO","msg":"handler: started","stream_id":"4y3aofcu"}
+{"time":"2025-04-08T21:44:49.0886986-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-08T21:44:59.0912361-05:00","level":"ERROR","msg":"monitor: disk: error sampling metrics: Incorrect function."}
+{"time":"2025-04-08T21:58:56.7542612-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-08T22:15:53.5679394-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-08T22:15:53.5714961-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-08T22:15:58.6067997-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-08T22:15:58.8748297-05:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-08T22:15:58.8753232-05:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-08T22:15:59.2413479-05:00","level":"ERROR","msg":"sender: sendDefer: failed to build job artifact","error":"CreateFile C:\\Users\\Hao\\Downloads\\LLM\\Reasoning\\<python with no main file>: The filename, directory name, or volume label syntax is incorrect."}
+{"time":"2025-04-08T22:15:59.5690474-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-08T22:15:59.796343-05:00","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2025-04-08T22:16:00.8244844-05:00","level":"INFO","msg":"stream: closing","id":"4y3aofcu"}
+{"time":"2025-04-08T22:16:00.8244844-05:00","level":"INFO","msg":"handler: closed","stream_id":"4y3aofcu"}
+{"time":"2025-04-08T22:16:00.8244844-05:00","level":"INFO","msg":"writer: Close: closed","stream_id":"4y3aofcu"}
+{"time":"2025-04-08T22:16:00.8244844-05:00","level":"INFO","msg":"sender: closed","stream_id":"4y3aofcu"}
+{"time":"2025-04-08T22:16:00.8244844-05:00","level":"INFO","msg":"stream: closed","id":"4y3aofcu"}

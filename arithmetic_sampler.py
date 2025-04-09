@@ -148,9 +148,13 @@ def sample_arith_exp_tok(num_samples, num_variables, max_length):
 
 
 class ArithmeticSampler:
-    def __init__(self, max_variables):
+    def __init__(self, max_variables, max_seq_len=None):
+        if max_seq_len is None:
+            max_seq_len = max_variables * 8 - 13
+        else:
+            assert max_seq_len >= max_variables * 8 - 13, "max_seq_len must be at least max_variables * 8 - 13"
         self.max_variables = max_variables
-        self.max_length = 8*max_variables - 13
+        self.max_length = max_seq_len
         self.causal_mask = torch.tril(torch.ones((self.max_length, self.max_length))).bool() # (T, T)
 
     def generate(self, num_samples, get_attn_mask=False):
@@ -195,4 +199,15 @@ class ArithmeticSampler:
             batch = batch.reshape(1, -1)
         decoded = ["".join([id_to_token[i] for i in row]) for row in batch]
         return decoded
+    
+    def encode(self, input_batch: list[str]):
+        max_len = max([len(i) for i in input_batch])
+        if max_len > self.max_length:
+            raise ValueError(f"Input length {max_len} exceeds max length {self.max_length}.")
+        input_batch = [i.rjust(self.max_length, " ") for i in input_batch]
+        encoded_arr = np.array([[char_to_id[c] for c in i] for i in input_batch])
+        mask_idx = np.array([i.find("=") for i in input_batch])
+        range_vecs = np.arange(self.max_length)
+        mask = np.array([range_vecs > idx for idx in mask_idx]).astype(int)
+        return torch.from_numpy(encoded_arr).long(), torch.from_numpy(mask)
         
